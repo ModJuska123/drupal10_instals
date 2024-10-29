@@ -1,0 +1,40 @@
+uuid: d3515444-bd46-4672-bb7a-a945ca029d17
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.task.field_actual_time_appear_after_c
+    - field.field.node.task.field_assigned_user_tech_senior
+    - field.field.node.task.field_assigned_users_junior_deve
+    - field.field.node.task.field_complete_task
+    - field.field.node.task.field_refenece_to_task_details_t
+    - field.field.node.task.field_required_time
+    - field.field.node.task.field_required_time_by_junior_de
+    - field.field.node.task.field_status
+    - field.field.node.task.field_task_creation_date
+    - field.field.node.task.field_task_title
+    - node.type.task
+  module:
+    - user
+id: node.task.teaser
+targetEntityType: node
+bundle: task
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_actual_time_appear_after_c: true
+  field_assigned_user_tech_senior: true
+  field_assigned_users_junior_deve: true
+  field_complete_task: true
+  field_refenece_to_task_details_t: true
+  field_required_time: true
+  field_required_time_by_junior_de: true
+  field_status: true
+  field_task_creation_date: true
+  field_task_title: true

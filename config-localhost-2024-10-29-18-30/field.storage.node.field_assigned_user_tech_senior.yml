@@ -1,0 +1,30 @@
+uuid: de1f7ec2-bed4-4913-a755-379dce0159b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_assigned_user_tech_senior
+field_name: field_assigned_user_tech_senior
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: virgis
+      label: Virgis
+    -
+      value: jonas
+      label: Jonas
+    -
+      value: onute
+      label: Onutė
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

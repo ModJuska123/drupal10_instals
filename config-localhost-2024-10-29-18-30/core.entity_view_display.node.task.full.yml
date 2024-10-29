@@ -1,0 +1,76 @@
+uuid: c207724b-4a9a-4928-8695-4d11ed4308f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.task.field_actual_time_appear_after_c
+    - field.field.node.task.field_assigned_user_tech_senior
+    - field.field.node.task.field_assigned_users_junior_deve
+    - field.field.node.task.field_complete_task
+    - field.field.node.task.field_refenece_to_task_details_t
+    - field.field.node.task.field_required_time
+    - field.field.node.task.field_required_time_by_junior_de
+    - field.field.node.task.field_status
+    - field.field.node.task.field_task_creation_date
+    - field.field.node.task.field_task_title
+    - node.type.task
+  module:
+    - options
+    - user
+id: node.task.full
+targetEntityType: node
+bundle: task
+mode: full
+content:
+  field_complete_task:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_required_time:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_required_time_by_junior_de:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_status:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_task_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_actual_time_appear_after_c: true
+  field_assigned_user_tech_senior: true
+  field_assigned_users_junior_deve: true
+  field_refenece_to_task_details_t: true
+  field_task_creation_date: true

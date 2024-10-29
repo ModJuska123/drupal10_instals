@@ -1,0 +1,14 @@
+uuid: 70dac48b-633b-4382-9ffe-063a8f1b8e60
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tech_senior_developer
+  module:
+    - user
+id: user_add_role_action.tech_senior_developer
+label: 'Add the Tech/Senior Developer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tech_senior_developer

@@ -1,0 +1,30 @@
+uuid: 3fdda4cd-2243-454f-90ef-aed530dbaa55
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_assigned_users_junior_deve
+field_name: field_assigned_users_junior_deve
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: jurgis
+      label: Jurgis
+    -
+      value: jurga
+      label: Jurga
+    -
+      value: antanas
+      label: Antanas
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

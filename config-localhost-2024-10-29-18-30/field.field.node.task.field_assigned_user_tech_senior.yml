@@ -1,0 +1,21 @@
+uuid: 95cffc77-d1e6-425a-85e6-36898c22ba4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assigned_user_tech_senior
+    - node.type.task
+  module:
+    - options
+id: node.task.field_assigned_user_tech_senior
+field_name: field_assigned_user_tech_senior
+entity_type: node
+bundle: task
+label: 'Assigned User (Tech/Senior Dev)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

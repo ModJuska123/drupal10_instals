@@ -1,0 +1,14 @@
+uuid: 8c2dd644-a9f0-49af-8cac-26f2773b3e1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.junior_developer
+  module:
+    - user
+id: user_add_role_action.junior_developer
+label: 'Add the Junior Developer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: junior_developer

@@ -1,0 +1,19 @@
+uuid: 234c461d-9b61-4841-b50e-13b60561a587
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_title
+    - node.type.task
+id: node.task.field_task_title
+field_name: field_task_title
+entity_type: node
+bundle: task
+label: 'Task Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

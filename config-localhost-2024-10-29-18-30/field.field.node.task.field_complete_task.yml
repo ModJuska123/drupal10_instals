@@ -1,0 +1,21 @@
+uuid: d68743bf-5598-4af6-9793-c0e9c89d08cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_complete_task
+    - node.type.task
+  module:
+    - options
+id: node.task.field_complete_task
+field_name: field_complete_task
+entity_type: node
+bundle: task
+label: 'Complete Task'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

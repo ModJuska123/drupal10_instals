@@ -1,0 +1,19 @@
+uuid: 15093f60-2d13-4df3-ab59-98e50828330d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_creation_date
+    - node.type.task
+id: node.task.field_task_creation_date
+field_name: field_task_creation_date
+entity_type: node
+bundle: task
+label: 'Task Creation Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

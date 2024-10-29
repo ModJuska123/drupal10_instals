@@ -1,0 +1,14 @@
+uuid: f835ee19-ba11-4fb0-b658-282d4f6b0adf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tech_senior_developer
+  module:
+    - user
+id: user_remove_role_action.tech_senior_developer
+label: 'Remove the Tech/Senior Developer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tech_senior_developer

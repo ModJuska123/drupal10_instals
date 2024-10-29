@@ -1,0 +1,21 @@
+uuid: ee72c76f-4497-464a-8b29-412305ffeaa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assigned_users_junior_deve
+    - node.type.task
+  module:
+    - options
+id: node.task.field_assigned_users_junior_deve
+field_name: field_assigned_users_junior_deve
+entity_type: node
+bundle: task
+label: 'Assigned Users (Junior Developers)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

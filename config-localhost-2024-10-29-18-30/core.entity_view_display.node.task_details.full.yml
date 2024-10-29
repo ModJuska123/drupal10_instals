@@ -1,0 +1,32 @@
+uuid: 061048b8-7d46-4fd6-a24a-a38cc699a816
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.task_details.field_required_time_by_junior_de
+    - field.field.node.task_details.field_submitted_by
+    - node.type.task_details
+  module:
+    - user
+id: node.task_details.full
+targetEntityType: node
+bundle: task_details
+mode: full
+content:
+  field_required_time_by_junior_de:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_submitted_by: true

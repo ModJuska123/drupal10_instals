@@ -1,0 +1,29 @@
+uuid: 403ec200-711b-4406-a5df-2001ded4f672
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_refenece_to_task_details_t
+    - node.type.task
+    - node.type.task_details
+id: node.task.field_refenece_to_task_details_t
+field_name: field_refenece_to_task_details_t
+entity_type: node
+bundle: task
+label: 'Refenece to Task Details Test'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      task_details: task_details
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

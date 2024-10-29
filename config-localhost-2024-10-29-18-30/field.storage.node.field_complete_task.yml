@@ -1,0 +1,27 @@
+uuid: f4b2dc89-f534-4597-8cf5-e3dea521b8b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_complete_task
+field_name: field_complete_task
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ongoing
+      label: Ongoing
+    -
+      value: done
+      label: Done
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

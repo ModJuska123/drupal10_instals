@@ -1,0 +1,23 @@
+uuid: f12240d9-3321-4f96-98c5-6b54f554736a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_required_time
+    - node.type.task
+id: node.task.field_required_time
+field_name: field_required_time
+entity_type: node
+bundle: task
+label: 'Required Time (by Tech/Senior Dev)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

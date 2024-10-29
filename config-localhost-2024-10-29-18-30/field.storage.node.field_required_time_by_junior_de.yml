@@ -1,0 +1,20 @@
+uuid: 7d9b06e4-5ff1-481f-8576-43b3d527e7f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_required_time_by_junior_de
+field_name: field_required_time_by_junior_de
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

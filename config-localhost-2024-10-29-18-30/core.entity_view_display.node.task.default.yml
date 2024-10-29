@@ -1,0 +1,117 @@
+uuid: f56bcd38-f9a4-4347-93ab-43696daf1a7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.task.field_actual_time_appear_after_c
+    - field.field.node.task.field_assigned_user_tech_senior
+    - field.field.node.task.field_assigned_users_junior_deve
+    - field.field.node.task.field_complete_task
+    - field.field.node.task.field_refenece_to_task_details_t
+    - field.field.node.task.field_required_time
+    - field.field.node.task.field_required_time_by_junior_de
+    - field.field.node.task.field_status
+    - field.field.node.task.field_task_creation_date
+    - field.field.node.task.field_task_title
+    - node.type.task
+  module:
+    - datetime
+    - options
+    - user
+id: node.task.default
+targetEntityType: node
+bundle: task
+mode: default
+content:
+  field_actual_time_appear_after_c:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_assigned_user_tech_senior:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_assigned_users_junior_deve:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_complete_task:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_refenece_to_task_details_t:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_required_time:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_required_time_by_junior_de:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_task_creation_date:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_task_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,21 @@
+uuid: c1f60317-8313-41c7-9662-ec747d39c49d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actual_time_appear_after_c
+    - node.type.task
+  module:
+    - datetime
+id: node.task.field_actual_time_appear_after_c
+field_name: field_actual_time_appear_after_c
+entity_type: node
+bundle: task
+label: 'Actual Time (appear after completion task)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

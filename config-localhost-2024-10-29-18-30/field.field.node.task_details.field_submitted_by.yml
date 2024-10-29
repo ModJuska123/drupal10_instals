@@ -1,0 +1,29 @@
+uuid: 0dee941d-e3c4-4173-a2d9-0f0e8c48c9a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_submitted_by
+    - node.type.task
+    - node.type.task_details
+id: node.task_details.field_submitted_by
+field_name: field_submitted_by
+entity_type: node
+bundle: task_details
+label: Reference
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      task: task
+    sort:
+      field: nid
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

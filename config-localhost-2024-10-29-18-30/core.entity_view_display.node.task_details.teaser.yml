@@ -1,0 +1,24 @@
+uuid: 410dd36f-0898-4fef-9d97-0801212f91d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.task_details.field_required_time_by_junior_de
+    - field.field.node.task_details.field_submitted_by
+    - node.type.task_details
+  module:
+    - user
+id: node.task_details.teaser
+targetEntityType: node
+bundle: task_details
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_required_time_by_junior_de: true
+  field_submitted_by: true

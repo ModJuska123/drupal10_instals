@@ -1,0 +1,23 @@
+uuid: da9ba93f-aae4-41b2-b915-de917ee3ec85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_required_time_by_junior_de
+    - node.type.task
+id: node.task.field_required_time_by_junior_de
+field_name: field_required_time_by_junior_de
+entity_type: node
+bundle: task
+label: 'Required Time (by Junior Dev)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,36 @@
+uuid: 7206705a-0ebc-44d5-bd04-44e0bf4eb96f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - node.type.article
+    - node.type.page
+    - node.type.task
+  module:
+    - block_content
+    - node
+id: tech_senior_developer
+label: 'Tech/Senior Developer'
+weight: -6
+is_admin: null
+permissions:
+  - 'create article content'
+  - 'create basic block content'
+  - 'create page content'
+  - 'create task content'
+  - 'delete any article content'
+  - 'delete any basic block content'
+  - 'delete any page content'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'delete own task content'
+  - 'delete task revisions'
+  - 'edit any article content'
+  - 'edit any basic block content'
+  - 'edit any task content'
+  - 'edit own article content'
+  - 'edit own task content'
+  - 'revert task revisions'
+  - 'view own unpublished content'
+  - 'view task revisions'
